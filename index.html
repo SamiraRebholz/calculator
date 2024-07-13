@@ -7,28 +7,38 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class=”calculator”>
-        <div class=”calculator__display”>0</div>
-        <div class=”calculator__keys”>
-            <div class="calculator__keys">
-                <button class="key--operator" data-action="add">+</button>
-                <button class="key--operator" data-action="subtract">-</button>
-                <button class="key--operator" data-action="multiply">&times;</button>
-                <button class="key--operator" data-action="divide">÷</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>0</button>
-                <button data-action="decimal">.</button>
-                <button data-action="clear">AC</button>
-                <button class="key--equal" data-action="calculate">=</button>
-              </div>
+    <div class="calculator">
+        <div class="input" id="input"></div>
+        <div class="buttons">
+          <div class="operators">
+            <div>+</div>
+            <div>-</div>
+            <div>&times;</div>
+            <div>&divide;</div>
+          </div>
+          <div class="leftPanel">
+            <div class="numbers">
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+            </div>
+            <div class="numbers">
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+            </div>
+            <div class="numbers">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <div class="numbers">
+              <div>0</div>
+              <div>.</div>
+              <div id="clear">C</div>
+            </div>
+          </div>
+          <div class="equal" id="result">=</div>
         </div>
       </div>
       <script src="./script.js"></script>
