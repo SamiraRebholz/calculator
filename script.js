@@ -1,0 +1,27 @@
+const calculator = document.querySelector('.calculator');
+const keys = document.querySelector('.calculator__keys');
+
+keys.addEventListener('click', e => {
+ if (e.target.matches('button')) {
+    const key = e.target;
+    const action = key.dataset.action;
+    if (
+        action === 'add' ||
+        action === 'subtract' ||
+        action === 'multiply' ||
+        action === 'divide'
+      ) {
+        console.log('operator')
+      } else {
+        console.log('number')
+      }
+
+      if (action === 'decimal') {
+        console.log('decimal')
+      } else if (action === 'clear') {
+        console.log('clear')
+      } else if (action === 'calculate') {
+        console.log('equal')
+      }
+ }
+})
