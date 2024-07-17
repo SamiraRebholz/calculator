@@ -1,8 +1,8 @@
 var input = document.getElementById('input'),
-  number = document.querySelectorAll('.numbers div'),
-  operator = document.querySelectorAll('.operators div'),
+  number = document.querySelectorAll('#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #decimal'),
+  operator = document.querySelectorAll('#add, #subtract, #multiply, #divide'),
   result = document.getElementById('result'), 
-  clear = document.getElementById('clear'), 
+  clear = document.getElementById('clear'),  
   resultDisplayed = false; 
 for (var i = 0; i < number.length; i++) {
   number[i].addEventListener("click", function(e) {

@@ -5,53 +5,153 @@ body {
     width: 100vw;
     font-family: 'ClashGrotesk-Regular';
 }
+
 .calculator {
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    width: 30%;
+    height: 90%;
+    margin: 0 auto;
     background-color: var(--bg);
     color: #fff;
     border-radius: 1rem;
-    padding: 0 0.5rem 0.5rem 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "display display display display"
+    "add subtract multiply divide"
+    "one two three equal"
+    "four five six equal"
+    "seven eight nine equal"
+    "zero decimal clear equal";
 }
 
 .input {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: var(--display);
     color: #333;
-    width: 97.3%;
-    height: 3rem;
-    font-size: 20px;
-    padding: 10px;
-    margin: 0;
+    font-size: normal;
     border-radius: 1rem 1rem 0 0;
+    grid-area: display;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    font-size: 4rem;
 }
 
-.operators > * {
-    background-color: var(--operators);
-}
-.numbers > * {
-    background-color: var(--numbers);
-}
 .equal {
     background-color: var(--equal);
+    grid-area: equal;
 }
+#add, 
+#subtract,
+#multiply,
+#divide {
+    background-color: var(--operators);
+}
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#decimal {
+    background-color: var(--numbers);
+}
+
+
 #clear {
     background-color: var(--clear);
+    grid-area: clear;
 }
-.operators > div,
-.numbers > div,
+#decimal {
+    grid-area: decimal;
+}
+#zero {
+    grid-area: zero;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#add {
+    grid-area: add;
+}
+#subtract {
+    grid-area: subtract;
+}
+#multiply {
+    grid-area: multiply;
+}
+#divide {
+    grid-area: divide;
+}
+
+#add, 
+#subtract,
+#multiply,
+#divide,
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#decimal,
+#clear,
 .equal {
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
 }
-.operators > div,
-.numbers > div {
-    width: 20%;
-    height: 2rem;
+
+#add, 
+#subtract,
+#multiply,
+#divide,
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#decimal {
+    height: 5rem;
 }
