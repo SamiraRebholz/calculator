@@ -14,7 +14,7 @@ body {
     color: #fff;
     border-radius: 1rem;
     display: grid;
-    grid-gap: 0.5rem;
+    grid-gap: 0.4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -49,6 +49,7 @@ body {
 #divide {
     background-color: var(--operators);
 }
+
 #zero,
 #one,
 #two,
@@ -154,4 +155,22 @@ body {
 #nine,
 #decimal {
     height: 5rem;
+}
+#add,
+#one,
+#four,
+#seven,
+#zero {
+    margin-left: 0.4rem;
+}
+#zero, 
+#decimal, 
+#clear,
+.equal {
+    margin-bottom: 0.4rem;
+}
+
+#divide,
+.equal {
+    margin-right: 0.4rem;
 }
