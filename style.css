@@ -12,16 +12,22 @@ body {
     transform: translate(-50%);
     background-color: var(--bg);
     color: #fff;
+    border-radius: 1rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .input {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: var(--display);
     color: #333;
-    width: 100%;
-    height: 50%;
+    width: 97.3%;
+    height: 3rem;
     font-size: 20px;
     padding: 10px;
-    margin: 10px 0;
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .operators > * {
@@ -35,4 +41,17 @@ body {
 }
 #clear {
     background-color: var(--clear);
+}
+.operators > div,
+.numbers > div,
+.equal {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operators > div,
+.numbers > div {
+    width: 20%;
+    height: 2rem;
 }
